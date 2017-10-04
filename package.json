@@ -1,0 +1,32 @@
+{
+  "name": "nativedapp",
+  "version": "0.1.0",
+  "private": true,
+  "author": {
+    "name": "Transmute Industries"
+  },
+  "devDependencies": {
+    "jest": "20.0.4",
+    "react-test-renderer": "^16.0.0-alpha.12"
+  },
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test": "node node_modules/jest/bin/jest.js --watch"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "lodash": "^4.13.1",
+    "native-base": "^2.3.2",
+    "react": "^16.0.0-alpha.12",
+    "react-native": "^0.48.4",
+    "react-native-router-flux": "^4.0.0-beta.21",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-persist": "^4.10.1",
+    "redux-thunk": "^2.2.0"
+  }
+}
