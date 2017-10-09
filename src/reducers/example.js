@@ -4,7 +4,7 @@ const initialState = {
 	example: null
 };
 
-export default function reducer(state = initialState, action) {
+export const reducer = (state = initialState, action) => {
 	switch (action.type) {
 
 		case Actions.EXAMPLE_ACTION: {

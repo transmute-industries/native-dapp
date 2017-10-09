@@ -1,3 +1,7 @@
+import 'node-libs-react-native/globals';
+console.log('before global')
+global.Symbol = require('es6-symbol');
+console.log('App Symbol: ', Symbol)
 import React, { Component } from 'react';
 import { AsyncStorage, StyleSheet, View, Dimensions, Text } from 'react-native';
 import { Provider } from 'react-redux';
@@ -8,12 +12,15 @@ import {
 	Stack,
 } from 'react-native-router-flux';
 
-import configureStore from './store';
+import { getAccounts } from './actions/transmute';
 
+import configureStore from './store';
 import Home from './components/Home';
 import Login from './components/Login';
+import HealthcareDemo from './components/Healthcare';
 
 const store = configureStore();
+store.dispatch(getAccounts());
 
 class App extends Component {
 
@@ -42,6 +49,7 @@ class App extends Component {
 					<Stack key="root">
 						<Scene key="login" component={Login} hideNavBar />
 						<Scene key="home" component={Home} />
+						<Scene key="demo" component={HealthcareDemo} />
 					</Stack>
 				</Router>
 			</Provider>

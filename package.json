@@ -6,8 +6,12 @@
     "name": "Transmute Industries"
   },
   "devDependencies": {
-    "jest": "20.0.4",
-    "react-test-renderer": "^16.0.0-alpha.12"
+    "babel-jest": "21.0.2",
+    "babel-preset-react-native": "3.0.2",
+    "jest": "21.0.2",
+    "react-native-dotenv": "^0.1.0",
+    "react-test-renderer": "16.0.0-alpha.12",
+    "transmute-framework": "^0.1.16"
   },
   "scripts": {
     "start": "react-native start",
@@ -16,17 +20,47 @@
     "test": "node node_modules/jest/bin/jest.js --watch"
   },
   "jest": {
-    "preset": "jest-expo"
+    "preset": "react-native"
   },
   "dependencies": {
-    "lodash": "^4.13.1",
+    "assert": "^1.4.1",
+    "babel-plugin-rewrite-require": "^1.14.5",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^5.0.7",
+    "constants-browserify": "^1.0.0",
+    "domain-browser": "^1.1.7",
+    "es6-symbol": "^3.1.1",
+    "https-browserify": "^1.0.0",
+    "lodash": "^4.17.4",
     "native-base": "^2.3.2",
-    "react": "^16.0.0-alpha.12",
-    "react-native": "^0.48.4",
+    "node-libs-browser": "^2.0.0",
+    "node-libs-react-native": "git+https://git@github.com/parshap/node-libs-react-native.git",
+    "node-process": "^1.0.1",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^0.0.0",
+    "querystring-es3": "^0.2.1",
+    "react": "16.0.0-alpha.12",
+    "react-native": "0.48.3",
+    "react-native-bip39": "^2.3.0",
+    "react-native-crypto": "^2.0.3",
+    "react-native-flexbox-grid": "^0.3.1",
+    "react-native-pbkdf2-shim": "git+https://git@github.com/wswoodruff/react-native-pbkdf2-shim.git",
+    "react-native-randombytes": "^3.0.0",
     "react-native-router-flux": "^4.0.0-beta.21",
+    "react-navigation": "^1.0.0-beta.11",
     "react-redux": "^5.0.6",
+    "readable-stream": "^2.3.3",
     "redux": "^3.7.2",
-    "redux-persist": "^4.10.1",
-    "redux-thunk": "^2.2.0"
+    "redux-persist": "^4.9.1",
+    "redux-thunk": "^2.2.0",
+    "stream-browserify": "^2.0.1",
+    "stream-http": "^2.7.2",
+    "timers-browserify": "^2.0.4",
+    "transmute-contract": "file:./build/",
+    "truffle-contract": "^2.0.5",
+    "truffle-hdwallet-provider": "^0.0.3",
+    "tty-browserify": "^0.0.0",
+    "util": "^0.10.3",
+    "vm-browserify": "^0.0.4"
   }
 }

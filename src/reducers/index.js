@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
-import exampleReducer from './example';
+import { reducer as exampleReducer } from './example';
+import { reducer as transmuteReducer } from './transmute';
 
 export default combineReducers({
-    exampleReducer
+    example: exampleReducer,
+    transmute: transmuteReducer
 });
